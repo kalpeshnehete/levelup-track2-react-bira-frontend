@@ -1,5 +1,4 @@
 import React from 'react';
-import DataFetching from './DataFetching';
 import logo from '../images/logo.jpg';
 import notification from '../images/notification.jpg';
 import profilpic from '../images/profilpic.png';

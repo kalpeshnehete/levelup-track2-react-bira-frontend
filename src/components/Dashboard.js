@@ -1,5 +1,5 @@
 import React from 'react';
-import DataFetching from './DataFetching';
+import DataFetching from './Allissues';
 import logo from '../images/logo.jpg';
 import notification from '../images/notification.jpg';
 import profilpic from '../images/profilpic.png';
@@ -8,6 +8,9 @@ import dashicon from '../images/dashicon.png';
 import createicon from '../images/createicon.png';
 import issuesicon from '../images/issuesicon.png';
 import Searchissue from './Searchissue';
+import Highpriorityissue from './Highpriorityissue';
+import Allissues from './Allissues';
+import Recentlyupdatedissue from './Recentlyupdatedissue';
 
 
 
@@ -60,19 +63,19 @@ function Dashboard() {
           <div className="issuescontainer">
             <div className="issuebox">
               <h2>High Priority Issue</h2>
-              <DataFetching />
+              <Highpriorityissue />
             </div>
 
 
             <div className="issuebox">
               <h2>Recently Updated Issue</h2>
-              <DataFetching />
+              <Recentlyupdatedissue/>
             </div>
 
 
             <div className="issuebox">
               <h2>All Issues</h2>
-              <DataFetching />
+              <Allissues />
             </div>
 
           </div>

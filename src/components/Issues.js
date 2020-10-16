@@ -1,11 +1,14 @@
 import React from 'react';
-import DataFetching from './DataFetching';
+import DataFetching from './Allissues';
 import logo from '../images/logo.jpg';
 import notification from '../images/notification.jpg';
 import profilpic from '../images/profilpic.png';
 import dashicon from '../images/dashicon.png';
 import createicon from '../images/createicon.png';
 import issuesicon from '../images/issuesicon.png';
+import Todoissue from './Todoissue';
+import Inprogressissue from './Inprogressissue';
+import Doneissue from './Doneissue';
 
 
 
@@ -55,20 +58,20 @@ function Issues() {
             <div className="issuebox">
               <h2>To Do</h2>
               
-              <DataFetching />
+              <Todoissue />
               
             </div>
 
 
             <div className="issuebox">
               <h2>In Progress</h2>
-              <DataFetching />
+              <Inprogressissue />
             </div>
 
 
             <div className="issuebox">
               <h2>Done</h2>
-              <DataFetching />
+              <Doneissue />
             </div>
 
           </div>
