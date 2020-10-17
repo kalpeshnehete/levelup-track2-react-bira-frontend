@@ -122,6 +122,10 @@ height:80%;
   justify-content: space-between;
 }
 
+.child1 a{
+  text-decoration: none;
+}
+
 .child3{
   display: flex;
   justify-content: space-between;
@@ -147,6 +151,7 @@ border: none;
 border-radius: 4px;
 cursor: pointer;
 }
+
 
 .search input[type=text]{
   width: 500px;

@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 
-function Todoissue() {
+function Info() {
     const [issues, SetIssues] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:8000/api/v1/issues/?status=TODO')
+        axios.get('http://localhost:8000/api/v1/issues/?priority=HIGH')
             .then(res => {
                 console.log(res)
                 SetIssues(res.data)
@@ -27,7 +27,7 @@ function Todoissue() {
 
                         <div className="child1">
                             <div className="child1-1">
-                                <h5>Id :<a href="/issueinfo"> {issue.short_id}</a></h5>
+                                <h5>Id : {issue.short_id}</h5>
                             </div>
                             <div className="child1-2">
                                 <h5>Date :{issue.created_at}</h5>
@@ -63,4 +63,4 @@ function Todoissue() {
     )
 }
 
-export default Todoissue;
+export default Info;

@@ -58,7 +58,7 @@ class Forms extends Component {
   handleSubmit = e => {
     e.preventDefault();
     const data = {
-      short_id: this.state.short_id,
+      short_id: this.state.short_id.to,
       title:this.state.title,
       description: this.state.description,
       priority: this.state.priority,
@@ -82,7 +82,7 @@ class Forms extends Component {
             placeholder="Short_id" name="Short_id" value={this.state.short_id}
             onChange={this.onShort_idChange} required/>
         <label for="Title">Title</label>
-          <input input type="text"
+          <input type="text"
             placeholder="Title" value={this.state.title}
             onChange={this.onTitleChange} />
         <label for="Description">Description</label>
@@ -90,12 +90,12 @@ class Forms extends Component {
             placeholder="Description" value={this.state.description}
             onChange={this.onDescriptionChange} required/>
         <label for="Priority">Priority</label>
-          <input type="text"
-            placeholder="Priority" value={this.state.priority}
+          <input type="text" oninput="this.value = this.value.toUpperCase()"
+            placeholder="Priority"  value={this.state.priority}
             onChange={this.onPriorityChange} required/>
         <label for="Status">Status</label>
-          <input type="text"
-            placeholder="Status" value={this.state.status}
+          <input type="text" oninput="this.value = this.value.toUpperCase()"
+            placeholder="Status"  value={this.state.status}
             onChange={this.onStatusChange} required/>
             <label for="Created_by">Created_by</label>
           <input type="text"

@@ -27,7 +27,7 @@ function Inprogressissue() {
 
                         <div className="child1">
                             <div className="child1-1">
-                                <h5>Id : {issue.short_id}</h5>
+                                <h5>Id : <a href="/issueinfo">{issue.short_id}</a></h5>
                             </div>
                             <div className="child1-2">
                                 <h5>Date :{issue.created_at}</h5>
@@ -35,7 +35,7 @@ function Inprogressissue() {
                         </div>
 
                         <div className="child2">
-                            <h5>Description : {issue.description}</h5>
+                            <span>{issue.description}</span>
                         </div>
 
                         <div className="child3">

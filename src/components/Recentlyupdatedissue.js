@@ -35,7 +35,7 @@ function Recentlyupdatedissue() {
                         </div>
 
                         <div className="child2">
-                            <h5>Description : {issue.description}</h5>
+                            <span> {issue.description}</span>
                         </div>
 
                         <div className="child3">
