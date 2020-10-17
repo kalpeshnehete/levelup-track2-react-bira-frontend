@@ -5,7 +5,6 @@ import Dashboard from './components/Dashboard';
 import Create from './components/Create';
 import Issues from './components/Issues';
 import Error from './components/Error';
-import Navigation from './components/Navigation';
 
 
 
